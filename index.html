@@ -1,0 +1,79 @@
+<html ng-app="proReviewApp">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.css">
+    <link rel="stylesheet" href="css/mfly-menu.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+
+        <div class="header">
+            <a href="#menu"><span class="fa fa-bars fa-2x" id="hamburger-menu"></span></a>
+        </div>
+
+        <nav id="menu">
+             <ul>
+                <li class="annotations">
+                  <i class="fa fa-pencil-square-o"></i> <span class="menu-item">Annotations</span>
+                </li>
+                <li class="second-screen">
+                  <i class="fa fa-slideshare"></i> <span class="menu-item">Second Screen</span>
+                </li>
+                <li class="collections">
+                  <i class="fa fa-plus"></i> <span class="menu-item">Collections</span>
+                </li>
+                <li class="previous">
+                  <i class="fa fa-arrow-left"></i> <span class="menu-item">Previous</span>
+                </li>
+                <li class="next">
+                  <i class="fa fa-arrow-right"></i> <span class="menu-item">Next</span>
+                </li>
+                <li class="close-btn">
+                  <i class="fa fa-close"></i> <span class="menu-item">Close</span>
+                </li>
+             </ul>
+        </nav>
+
+    <div class="container">
+        <div ng-view class="{{viewClass}}"></div>
+    </div>
+
+    <!-- scripts below -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- angular -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-touch/angular-touch.js"></script>
+    <script src="lib/ngDraggable/ngDraggable.js"></script>
+
+    <!-- Hamburger Menu -->
+    <script src="lib/hamburgermenu/jquery.mmenu.min.js"></script>
+    <script src="lib/hamburgermenu/ext.js"></script>
+    <script src="lib/mfly/mflyCommands.js"></script>
+    <script src="lib/fastclick/fastclick.js"></script>
+
+    <!-- main script -->
+    <script src="main.js"></script>
+
+    <!-- controllers -->
+    <script src="controllers/proreview-users.js"></script>
+    <script src="controllers/secondpage.js"></script>
+
+    <!-- directives -->    
+
+    <!-- services -->
+    <script src="services/initializedata-service.js"></script>
+    <script src="services/mflyCommands-Angular.js"></script>
+
+  </body>
+</html>

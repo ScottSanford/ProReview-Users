@@ -1,0 +1,85 @@
+<header class="header">
+	<div class="user-title">{{userGroup}} Users</div>
+	<div class="selected-user-icon" ng-click="goBackToIndex()">
+		<span class="section-icon fa fa-angle-double-left"></span>
+	</div>
+</header>
+
+<img class="user-image" ng-src="{{icon}}">
+
+<!-- display data -->
+
+<div class="row user-info-container">
+	<div class="user-info col-xs-8 col-xs-offset-2">
+		<!-- 1 -->
+		<div class="media activeTab" ng-class="{activetext:isSet(1)}" ng-show="isSet(1)">
+		  	<div class="media-left">
+		  	</div>
+		  	<div class="media-body">
+		    	<h3 class="media-heading">{{radioModel}}</h3>
+		    	<i class="body-text">{{description}}</i>
+		  	</div>
+		</div>
+		<!-- 2 -->
+		<div class="media activeTab" ng-class="{activetext:isSet(2)}" ng-show="isSet(2)">
+		  	<div class="media-left">
+		  	</div>
+		  	<div class="media-body">
+		    	<h3 class="media-heading">{{radioModel}}</h3>
+		    	<i class="body-text">{{challenge}}</i>
+		  	</div>
+		</div>
+		<!-- 3 -->
+		<div class="media activeTab" ng-class="{activetext:isSet(3)}" ng-show="isSet(3)">
+		    <div class="media-left">
+		    </div>		  
+		  	<div class="media-body">
+			    <h3 class="media-heading">{{radioModel}}</h3>
+			    <i class="body-text">{{resolution}}</i>
+		  	</div>
+		</div>	
+	    <!-- 4 -->
+	    <div class="media activeTab" ng-class="{activetext:isSet(4)}" ng-show="isSet(4)">
+		 	<div class="media-left">
+		  	</div>
+		  	<div class="media-body">
+			    <h3 class="media-heading">{{radioModel}}</h3>
+				<div class="image-container">
+			    	<img ng-repeat="prview in prviews" ng-src="{{prview.source}}" class="content-image">
+			    </div>
+		  	</div>
+		</div>
+		<!-- 5 -->
+		<div class="media activeTab" ng-class="{activetext:isSet(5)}" ng-show="isSet(5)">
+		  	<div class="media-left">
+		  	</div>
+		  	<div class="media-body">
+			    <h3 class="media-heading">{{radioModel}}</h3>
+			    <div class="image-container">
+			    	<img ng-repeat="resource in resources" ng-src="{{resource.src}}" class="content-image">
+			    </div>
+		  	</div>
+		</div>
+	</div>
+</div>
+
+<!-- tab button -->
+<div class="btn-group-wrap">
+	<div class="secondpage-tabs">
+		<div class="btn btn-primary" ng-model="radioModel" ng-class="{active:isSet(1)}" ng-click="setTab(1); radioModel= 'Challenge'">Description</div>
+	    <div class="btn btn-primary" ng-model="radioModel" ng-class="{active:isSet(2)}" ng-click="setTab(2); radioModel= 'Challenge'">Challenge</div>
+	    <div class="btn btn-primary" ng-model="radioModel" ng-class="{active:isSet(3)}" ng-click="setTab(3); radioModel= 'Resolution'">Resolution</div>
+	    <div class="btn btn-primary" ng-model="radioModel" ng-class="{active:isSet(4)}" ng-click="setTab(4); radioModel= 'ProReview Views'">ProReview Views</div>
+	    <div class="btn btn-primary" ng-model="radioModel" ng-class="{active:isSet(5)}" ng-click="setTab(5); radioModel= 'More Resources'">More Resources</div>
+	</div>
+</div>
+
+<span class="arrow-left fa fa-chevron-left fa-2x" ng-click="previousItem()"></span>
+<span class="arrow-right fa fa-chevron-right fa-2x" ng-click="nextItem()"></span>
+
+
+
+
+
+
+

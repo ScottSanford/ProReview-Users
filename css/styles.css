@@ -1,0 +1,1003 @@
+r/******************************************************************
+                         Global Styles
+******************************************************************/
+* {
+	-webkit-user-select:none;
+	user-select:none;
+}
+
+.container {
+	width:1024px;
+	margin:0 auto;
+/*	border-left:5px solid #ccc; 	
+	border-right:5px solid #ccc; */	
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:100%;
+	/*border:1px solid green;*/
+}
+
+#hamburger-menu {
+    color: #000;
+    opacity: .2;
+    z-index: 1000;
+    position: fixed;
+    top: 3px;
+    left: 3px;
+}
+
+.arrow-left {
+	position: fixed;
+	bottom: 10px;
+	left:5px;
+	opacity: .2;
+}
+
+.arrow-right {
+	position: fixed;
+	bottom: 10px;
+	right:5px;
+	opacity: .2;
+}
+/******************************************************************
+                         ProReview Users
+******************************************************************/
+.interactive-title {
+	text-align: center;
+	font-size: 3em;
+	font-family: "Helvetica-Light";
+	margin-top:50px;
+}
+
+.proreview-users-container {
+	width:100%;
+	margin-top:50px;
+}
+
+.proreview-user {
+	position: absolute;
+	top:180px;
+	left:745px;
+	float:left;
+	width:200px;
+	height:200px;
+	text-align: center;
+	background-color: #9fbe3c;
+	border-radius: 50%;
+	border:3px solid #e6e6e6;
+}
+
+[ng-drag].proreview-user.dragging {
+	border:3px solid;
+}
+
+.proreview-user:nth-of-type(3) {
+	position: absolute;
+	left:510px;
+}
+
+.proreview-user:nth-of-type(2) {
+	position: absolute;
+	left:275px;
+}
+.proreview-user:first-of-type {
+	position: absolute;
+	left:40px;
+}
+
+.proreview-user.ng-click-active {
+	border:3px solid;
+}
+
+.name-container {
+	width:100%;
+	position: absolute;
+	top:375px;
+}
+
+.proreview-user-name {
+	width:200px;
+	font-size:1.9em;
+	float:left;
+	text-align: center;
+	margin:25px 0px 0 0;
+	position: relative;
+	left:25px;
+}
+
+.proreview-user-name:nth-of-type(2) {
+	position: relative;
+	left: 60px;
+}
+
+.proreview-user-name:nth-of-type(3) {
+	position: relative;
+	left: 95px;
+}
+
+.proreview-user-name:last-of-type {
+	position: relative;
+	left: 130px;
+}
+
+.launch-user {
+	width:200px;
+	height:200px;
+	position: absolute;
+	left:50%;
+	margin-left:-100px;
+	margin-top:325px;
+	border:3px dashed;
+	border-radius: 50%;
+}
+
+.launch-user .icon {
+	margin-left: 35px;
+}
+
+.icon {
+	margin-top:40px;
+	font-size:8em;
+}
+
+.drag-enter {
+	border-color:#9fbe3c;
+	color:#9fbe3c;
+}
+/******************************************************************
+                          Second Page
+******************************************************************/
+.selected-user-icon {
+	width:75px;
+	height:75px;
+	text-align: center;
+	display: block;
+	float:right;
+	background-color: #9fbe3c;
+	border-radius: 50%;
+	border:3px solid #e6e6e6;
+	margin-top:-70px;
+}
+
+.media-heading {
+	font-weight: 700;
+	font-size:2em;
+}
+
+.image-container {
+	width:600px;
+	height:440px;	
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.selected-user-icon.ng-click-active {
+	border:3px solid;
+}
+
+.user-title {
+	text-align: center;
+	margin-top: 25px;
+	font-size:3em;
+}
+
+.user-image {
+	position: absolute;
+	top:175px;
+}
+
+.goback {
+	position: absolute;
+	left: 167px;
+	top:110px;
+	display: block;
+	width:75px;
+	height:75px;
+	border:3px transparent;
+	border-radius: 50%;
+	margin-left: 691px;
+}
+
+.section-icon {
+	font-size:3em;
+	margin-top:13px;
+	margin-left:-4px;
+}
+
+.rocket-icon {
+  font-size: 4em;
+  margin-top: 30px;
+  margin-left: 40px;
+  color:transparent;
+}
+
+.user-info-container {
+	margin-top:135px;
+	height:425px;
+}
+
+.user-info {
+	margin-top:-75px;
+}
+
+.user-info-icon {
+	font-size:8em;
+	color:#465568;
+}
+
+.btn-group-wrap {
+	text-align: center;
+	position: absolute;
+	bottom:70px;
+	left:200px;
+}
+
+.secondpage-tabs {
+	margin:-25px auto;
+	display: inline-block;
+}
+
+.secondpage-tabs label {
+	padding:10px 30px;
+}
+
+.btn-primary {
+	background-color: #9a9d96;
+	border:1px solid #fff;
+	padding:10px 20px;
+}
+
+.btn-primary.active, .btn-primary:hover {
+	background-color: #9fbe3c;
+	border:1px solid #fff;
+}
+
+.body-text {
+	font-size:28px;
+	line-height: 1.5;
+	color:#333;
+}
+
+.activetext-add {
+	display: none;
+}
+
+.activeTab.ng-hide-remove {
+  -webkit-animation: fadeIn .01s;
+  -moz-animation: fadeIn .01s;
+  -o-animation: fadeIn .01s;
+  animation: fadeIn .01s;
+}
+
+[ng-drag].selected-user-icon.dragging {
+	border:3px solid;
+}
+
+[ng-drop].drag-enter {
+	border:3px dashed;
+}
+
+[ng-drop].drag-enter span {
+	color:#9fbe3c;
+}
+
+.content-image {
+	width: 530px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/*******************************************************
+                       Media Queries
+********************************************************/
+/*iPad Portrait*/
+@media only screen and (width: 768px) and (orientation: portrait) {
+	.interactive-title {
+		margin-left: -225px;
+	}
+
+	.launch-user {
+		margin:310px -225px;
+	}
+
+	.proreview-user:first-of-type {
+		position: absolute;
+		left:110px;
+	}
+
+	.proreview-user-name:first-of-type {
+		position: absolute;
+		left:95px;
+	}
+
+	.proreview-user:nth-of-type(2) {
+		position: absolute;
+		left:450px;
+	}
+
+	.proreview-user-name:nth-of-type(2) {
+		position: absolute;
+		left:425px;
+	}
+
+	.proreview-user:nth-of-type(3) {
+		position: absolute;
+		left:110px;
+		top:700px;
+	}
+
+	.proreview-user-name:nth-of-type(3) {
+		position: absolute;
+		left:95px;
+		top:525px;
+	}
+
+	.proreview-user:last-of-type {
+		position: absolute;
+		left:450px;
+		top:700px;
+	}
+
+	.proreview-user-name:last-of-type {
+		position: absolute;
+		left:425px;
+		top:525px;
+	}
+
+	.btn-group-wrap {
+		position: absolute;
+		bottom:70px;
+		left:75px;
+	}
+
+	.image-container {
+		width:450px;
+		height:675px;	
+		overflow-y: scroll;
+		/*border:1px solid red;*/
+	}
+	.content-image {
+		width: 450px;
+	}
+
+	.secondpage-tabs {
+	    margin-left: 0px auto;
+	    display: inline-block;
+	    position: relative;
+	    top: 20px;
+	}
+
+	.user-title {
+		margin-left:-225px;
+	}
+	
+	.selected-user-icon {
+		position: absolute;	
+		top:90px;
+		left:670px;
+	}
+
+	.media {
+		width:550px;
+	}
+}
+
+/***************************************************
+				iPhone 6+
+****************************************************/
+/*Landscape*/
+@media only screen and (width:736px) and (orientation: landscape) {
+	/* first page*/
+	.interactive-title {
+		font-size: 2em;
+		margin:0 0 0 -275px;
+	}
+
+	.proreview-user:first-of-type {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:45px;
+		left:20px;
+	}
+
+	.proreview-user:nth-of-type(2) {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:45px;
+		left:205px;
+	}
+
+	.proreview-user:nth-of-type(3) {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:45px;
+		left:390px;
+	}
+
+	.proreview-user:last-of-type {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:45px;
+		left:575px;
+	}
+
+	.proreview-user-name {
+		font-size:1.7em;
+	}
+
+	.proreview-user-name:first-of-type {
+		position: absolute;
+	    top: -200px;
+	    left: -20px;
+	}
+
+	.proreview-user-name:nth-of-type(2) {
+		position: absolute;
+	    top: -200px;
+	    left: 165px;
+	}
+
+	.proreview-user-name:nth-of-type(3) {
+		position: absolute;
+	    top: -200px;
+	    left: 350px;
+	}
+
+	.proreview-user-name:last-of-type {
+		position: absolute;
+	    top: -200px;
+	    left: 535px;
+	}
+
+	.icon {
+		font-size: 6.5em;
+    	margin-top: 26px;
+	}
+
+	.launch-user .icon {
+		margin-left:25px;
+	}
+
+	.launch-user {
+		width:150px;
+		height:150px;
+		margin-top:160px;
+		margin-left:-215px;
+	}
+
+	/* second page*/
+	.user-info-container {
+	    width: 900px;
+	    margin-left: -65px;
+	    margin-top:115px;
+	}
+
+	.user-title {
+		font-size:2em;
+		margin-top:0px;
+		margin-left:-275px;
+		margin-top:25px;
+	}
+
+	.selected-user-icon {
+		width: 50px;
+	    height: 50px;
+	    position: absolute;
+	    top:90px;
+	    left:675px;
+	}
+
+	.section-icon {
+		margin-top:0px;
+	}
+
+	.user-info {
+		margin-top:-110px;
+	}
+	
+	.media-heading {
+		font-size:1.5em;
+	}
+
+	.body-text {
+		font-size:20px;
+		line-height:1.5;
+	}
+
+	.user-image {
+		top: 90px;
+	    width: 90px;
+	    height: auto;
+	}
+
+	.image-container {
+		width:700px;
+	}
+
+	.content-image {
+	    width: 250px;
+	    display: inline-block;
+	    margin-left: 20px;
+	    height: auto;
+	}
+
+	.btn-group-wrap {
+		left:75px;
+	}
+
+	.btn-primary {
+		padding:7px 15px;
+	}
+
+	.secondpage-tabs {
+	    position: relative;
+	    top: 50px;
+	}
+}
+
+/*Portrait*/
+@media only screen and (width:414px) and (orientation: portrait) {
+
+	/* first page*/
+	.interactive-title {
+		font-size: 2em;
+		margin-top:20px;
+		margin-left:-595px;
+	}
+
+	.proreview-user:first-of-type {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:90px;
+		left:40px;
+	}
+
+	.proreview-user:nth-of-type(2) {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:90px;
+		left:225px;
+	}
+
+	.proreview-user:nth-of-type(3) {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:290px;
+		left:40px;
+	}
+
+	.proreview-user:last-of-type {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:290px;
+		left:225px;
+	}
+
+	.proreview-user-name {
+		font-size:1.7em;
+	}
+
+	.proreview-user-name:first-of-type {
+		position: absolute;
+	    top: -155px;
+	    left: 0px;
+	}
+
+	.proreview-user-name:nth-of-type(2) {
+		position: absolute;
+	    top: -155px;
+	    left: 185px;
+	}
+
+	.proreview-user-name:nth-of-type(3) {
+		position: absolute;
+	    top: 40px;
+	    left: 0px;
+	}
+
+	.proreview-user-name:last-of-type {
+		position: absolute;
+	    top: 40px;
+	    left: 185px;
+	}
+
+	.icon {
+		font-size: 6.5em;
+    	margin-top: 26px;
+	}
+
+	.launch-user .icon {
+		margin-left:25px;
+	}
+
+	.launch-user {
+		width:150px;
+		height:150px;
+		margin-top:445px;
+		margin-left:-380px;
+	}
+
+	/* second page*/
+	.user-info-container {
+		width:465px;
+	}
+
+	.user-title {
+		font-size:2em;
+		margin-top:25px;
+		margin-left:-600px;
+	}
+
+	.selected-user-icon {
+		width: 50px;
+	    height: 50px;
+	    position: absolute;
+	    top:90px;
+	    left:350px;
+	}
+
+	.section-icon {
+		margin-top:0px;
+	}
+
+	.user-info {
+		margin-top:-110px;
+	}
+	
+	.media-heading {
+		font-size:1.5em;
+	}
+
+	.body-text {
+		font-size:20px;
+		line-height:1.5;
+	}
+
+	.user-image {
+		top: 90px;
+	    width: 90px;
+	    height: auto;
+	}
+
+	.image-container {
+		width:260px;
+	}
+
+	.content-image {
+		width:260px;
+	}
+
+	.btn-primary {
+		padding:10px 15px;
+	}
+
+	.btn-group-wrap {
+		text-align: center;
+		position: absolute;
+		bottom:35px;
+		left:35px;
+		width:350px;
+	}
+}
+
+/***************************************************
+				iPhone 6
+****************************************************/
+
+/*Landscape*/
+@media only screen and (width: 667px) {
+	/* first page*/
+	.interactive-title {
+		font-size: 2em;
+		margin-top:0px;
+		margin-left:-330px;
+	}
+
+	.proreview-user:first-of-type {
+		position: absolute;
+		width:140px;
+		height:140px;
+		top:45px;
+		left:20px;
+	}
+
+	.proreview-user:nth-of-type(2) {
+		position: absolute;
+		width:140px;
+		height:140px;
+		top:45px;
+		left:185px;
+	}
+
+	.proreview-user:nth-of-type(3) {
+		position: absolute;
+		width:140px;
+		height:140px;
+		top:45px;
+		left:350px;
+	}
+
+	.proreview-user:last-of-type {
+		position: absolute;
+		width:140px;
+		height:140px;
+		top:45px;
+		left:515px;
+	}
+
+	.proreview-user-name {
+		font-size:1.7em;
+	}
+
+	.proreview-user-name:first-of-type {
+		position: absolute;
+	    top: -215px;
+	    left: -20px;
+	}
+
+	.proreview-user-name:nth-of-type(2) {
+		position: absolute;
+	    top: -215px;
+	    left: 140px;
+	}
+
+	.proreview-user-name:nth-of-type(3) {
+		position: absolute;
+	    top: -215px;
+	    left: 310px;
+	}
+
+	.proreview-user-name:last-of-type {
+		position: absolute;
+	    top: -215px;
+	    left: 470px;
+	}
+
+	.icon {
+		font-size: 6em;
+    	margin-top: 26px;
+	}
+
+	.launch-user .icon {
+		margin-left:25px;
+	}
+
+	.launch-user {
+		width:140px;
+		height:140px;
+		margin-top:136px;
+		margin-left:-245px;
+	}
+
+	/* second page*/
+	.user-info-container {
+	    width: 800px;
+	    margin-left: -65px;
+	    margin-top: 115px;
+	}
+
+	.user-title {
+		font-size:2em;
+		margin-left:-375px;
+	}
+
+	.selected-user-icon {
+		width: 50px;
+	    height: 50px;
+	    position: absolute;
+	    top: 90px;
+	    left: 600px;
+	}
+
+	.section-icon {
+		margin-top:0px;
+	}
+
+	.user-info {
+		margin-top:-110px;
+	}
+	
+	.media-heading {
+		font-size:1.5em;
+	}
+
+	.body-text {
+		font-size:18px;
+		line-height:1.5;
+	}
+
+	.user-image {
+		top: 90px;
+	    width: 90px;
+	    height: auto;
+	}
+
+	.image-container {
+		width:700px;
+	}
+
+	.content-image {
+	    width: 250px;
+	    display: inline-block;
+	    margin-left: 20px;
+	    height: auto;
+	}
+
+	.btn-primary {
+		padding:7px 15px;
+	}
+
+	.btn-group-wrap {
+		left:75px;
+	}
+
+	.secondpage-tabs {
+	    position: relative;
+	    top: 50px;
+	    left:-35;
+	}
+}
+
+/*Portrait*/
+@media only screen and (width:375px) {
+	/* first page*/
+	.interactive-title {
+		font-size: 2em;
+		margin-top:25px;
+		margin-left:-650px;
+	}
+
+	.proreview-user:first-of-type {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:90px;
+		left:25px;
+	}
+
+	.proreview-user:nth-of-type(2) {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:90px;
+		left:205px;
+	}
+
+	.proreview-user:nth-of-type(3) {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:290px;
+		left:25px;
+	}
+
+	.proreview-user:last-of-type {
+		position: absolute;
+		width:150px;
+		height:150px;
+		top:290px;
+		left:205px;
+	}
+
+	.proreview-user-name {
+		font-size:1.7em;
+	}
+
+	.proreview-user-name:first-of-type {
+		position: absolute;
+	    top: -155px;
+	    left: -15px;
+	}
+
+	.proreview-user-name:nth-of-type(2) {
+		position: absolute;
+	    top: -155px;
+	    left: 160px;
+	}
+
+	.proreview-user-name:nth-of-type(3) {
+		position: absolute;
+	    top: 40px;
+	    left: -15px;
+	}
+
+	.proreview-user-name:last-of-type {
+		position: absolute;
+	    top: 40px;
+	    left: 160px;
+	}
+
+	.icon {
+		font-size: 6.5em;
+    	margin-top: 26px;
+	}
+
+	.launch-user .icon {
+		margin-left:25px;
+	}
+
+	.launch-user {
+		width:150px;
+		height:150px;
+		margin-top:380px;
+		margin-left: -400px;
+	}
+
+/*	 second page*/
+	.user-info-container {
+		width:445px;
+		margin:145px 0 0 0;
+	}
+
+	.user-title {
+		font-size:1.8em;
+		margin-top:25px;
+		margin-left: -725px;
+	}
+
+	.selected-user-icon {
+	    width: 50px;
+	    height: 50px;
+	    position: absolute;
+	    top: 90px;
+	    left: 310px;
+	}
+
+	.section-icon {
+		margin-top:0px;
+	}
+
+	.user-info {
+		margin-top:-110px;
+	}
+	
+	.media-heading {
+		font-size:1.5em;
+	}
+
+	.body-text {
+		font-size:18px;
+		line-height:1.5;
+	}
+
+	.user-image {
+		top: 90px;
+	    width: 90px;
+	    height: auto;
+	}
+
+	.image-container {
+		width:260px;
+	}
+
+	.content-image {
+		width:225px;
+	}
+
+	.btn-primary {
+		padding:7px 15px;
+	}
+
+	.btn-group-wrap {
+		width:350px;
+		left:50px;
+	}
+
+	.secondpage-tabs {
+	    display: inline-block;
+	    position: relative;
+	    top: 35px;
+	    margin-left:-70px;
+	}
+}

@@ -1,0 +1,23 @@
+<div class="interactive-title">{{title}}</div>
+
+<div class="proreview-users-container">
+	<div ng-drag="true" 
+		 class="proreview-user"
+		 ng-repeat="user in users" 
+	     ng-drag-data="user"
+	     ng-click="onDragComplete($index, $data)"
+	     ng-drag-success="onDragComplete($index, $data)"
+		 >
+		<span class="icon fa {{user.icon}} fa-5x"></span>
+	</div>
+</div>
+<div class="name-container">
+	<div ng-repeat="user in users" class="proreview-user-name">{{user.name}}</div>
+</div>
+
+<div class="launch-user" ng-drop="true" ng-drag-start="showLaunchButton()">
+	<span class="icon fa fa-rocket fa-5x"></span>
+</div>
+
+<span class="arrow-left fa fa-chevron-left fa-2x" ng-click="previousItem()"></span>
+<span class="arrow-right fa fa-chevron-right fa-2x" ng-click="nextItem()"></span>

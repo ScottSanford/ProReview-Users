@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Executive",
+    "id": "0",
+    "description": "Executives are constantly traveling and hopping in and out of meetings, and it’s rare that you can grab their attention for more than a few minutes a day. ProReview allows your studio’s executive to access our film and TV content without needing your constant support. Its intuitive and familiar feel allows them to access content at their convenience to deliver feedback and be ready for that next meeting.",
+    "challenge": "My current system is totally overwhelming for non-technical users. I want something where I don’t have to trade functionality for ease of use.",
+    "resolution": "ProReview is a sleek tool to review content that’s user-friendly, at a price point that allows broad deployment. That means no more picking and choosing who gets a seat on the system, constantly micromanaging accounts and access.",
+    "prviews": [
+                    {"source": "images/executive-view.png"}
+                ],
+    "resources": [
+                    {"src": "images/pr-whiteboard.jpg"}
+                ], 
+    "icon": "images/executive.png"
+  },  
+  {
+    "title": "Marketing",
+    "id": "1",
+    "description": "ProReview can be spun up with just a few weeks notice to handle ten of thousands of users. We are able to integrate with systems that are already in place and support mass importing of users, as well as systems that allow your company to grant or deny access in near real-time. Forget carrying around binders or trying to wrangle a group to come to a screening. Now all they need is their cell phone or tablet to get all the materials they need from you.",
+    "challenge": "I have a big event with employees and potential buyers coming in from all over the globe, and I need to distribute content to all of them.",
+    "resolution": "Using ProReview for an event eliminates the logistics of trying to coordinate all this content when I'm on the ground and need to focus on a million other things. With Mediafly's support, content distribution (and its budgeting) is one less thing I have to worry.",
+    "prviews": [
+                    {"source": "images/sales-marketing-view.png"}
+                ],
+    "resources": [
+                    {"src": "images/pr-whiteboard.jpg"}
+                ], 
+    "icon": "images/onsite.png"
+  },  
+  {
+    "title": "Post Production",
+    "id": "2",
+    "description": "Post-production staff needs to not only edit and collect television and film dailies and rough cuts, but distribute them to partners, executives and other staff. ProReview allows your post-production staff to continue using their existing content systems but streamlines the process of getting dailies and rough cuts to others so they can spend more time doing what they do best.",
+    "challenge": "Once I’ve completed my editing for the day, I have to distribute content for review across multiple systems. Our current digital asset management and workflow solution is too expensive for it to be cost-effective to provide access to everyone who needs it.",
+    "resolution": "ProReview can integrate seamlessly into your current content management system. Once you’ve completed your editing for the day, ProReview can sync to your system and provide the content to the right parties on a platform that’s easy to use and cost effective for your studio.",
+    "prviews": [
+                    {"source": "images/post-production-view.png"}
+                ],
+    "resources": [
+                    {"src": "images/product-life-cycle.jpg"}
+                ], 
+    "icon": "images/postproduction.png"
+  },  
+  {
+    "title": "Vendor",
+    "id": "3",
+    "description": "IT users need to delegate which vendors, as well as other departments within your company, have access to content and for how long. ProReview simplifies the process, with the added benefit of reporting tools on what content users have consumed and for how long, all with the security your IT team requires.",
+    "challenge": "I have multiple outside vendors and partners that need to access my content, but our company's strengthened security/environmental policy no longer allows me to send DVDs/thumbdrives/download links.",
+    "resolution": "ProReview allows me to eliminate security concerns and go green by no longer printing and mailing DVDs. I don’t have to worry about the right people getting the right content or people leaving DVDs in their hotel room to find their way to the internet days later. I have the added benefit of content to the relevant person arriving almost instantaneously; no more costly overnighting.",
+    "prviews": [
+                    {"source": "images/itvendor-view.png"}
+                ],
+    "resources": [
+                    {"src": "images/reporting-dashboard.jpg"}, 
+                    {"src": "images/nbc-universal.png"} 
+                ], 
+    "icon": "images/IT.png"
+  }
+]
